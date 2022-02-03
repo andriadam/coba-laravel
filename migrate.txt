@@ -1,0 +1,19 @@
+// Membuat tabel
+php artisan migrate
+
+// Membuat semua tabel hilang kecuali tabel migrations
+php artisan migrate:rollback
+
+//  Membuat semua tabel hilang lalu membuatnya kembali
+php artisan migrate:fresh
+
+//  Membuat semua tabel hilang lalu membuatnya kembali dengan seeder/isinya
+php artisan migrate:fresh --seed
+
+// Daftar route yang ada
+php artisan route:list
+
+// Menjalankan migrasi yang belum dijalankan
+php artisan migrate
+// Menghapus field yang diatas
+php artisan migrate:rollback
